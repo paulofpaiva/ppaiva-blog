@@ -1,10 +1,14 @@
 import {
   SiGithub,
+  SiGmail,
+  SiGmailHex,
   SiLinkedin,
+  SiWhatsapp,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Download, Send } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { ReactNode } from "react";
 
 const XLogo = () => {
@@ -49,32 +53,26 @@ const externalLinks: Link[] = [
   {
     name: "LinkedIn",
     description: "follow my career",
-    url: "https://linkedin.com/in/lukeberrypi",
+    url: "https://www.linkedin.com/in/paulo-paiva-672987292/",
     icon: <SiLinkedin className="fill-[#0077B5] dark:fill-zinc-200" />,
   },
   {
     name: "GitHub",
     description: "steal my code",
-    url: "https://github.com/lukeberrypi",
+    url: "https://github.com/paulofpaiva",
     icon: <SiGithub />,
   },
   {
-    name: "YouTube",
-    description: "watch me talk",
-    url: "https://youtube.com/@lukeberrypi",
-    icon: <SiYoutube className="fill-[#FF0032] dark:fill-zinc-200" />,
+    name: "Email",
+    description: "email me",
+    url: "mailto:ppaivank@gmail.com",
+    icon: <SiGmail className="fill-[#0077B5] dark:fill-zinc-200" />,
   },
   {
-    name: "X (formerly Twitter)",
-    description: "read my mind",
-    url: "https://x.com/lukeberrypi",
-    icon: <XLogo />,
-  },
-  {
-    name: "Get 10% OFF Raycast Pro",
-    description: "upgrade your workflow",
-    url: "https://www.raycast.com/pro?via=lukeberrypi",
-    icon: <RaycastLogo />,
+    name: "WhatsApp",
+    description: "message me",
+    url: "https://wa.me/5511993151155?text=Hi Paulo! I saw your portfolio and would like to discuss work opportunities.",
+    icon: <SiWhatsapp />,
   },
 ];
 
@@ -104,9 +102,17 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
       <p className="text-sm">
-        London-based Brazilian obsessed with UI for a decade. Working as a
-        Software Engineer for half that time. I love Raycast, TailwindCSS,
-        DJing, playing football, and creating pretty websites.
+      Building full-stack apps that solve problems since 2022, learning how to make them work better, faster, and at scale.
+      </p>
+      <p className="text-sm flex items-center gap-2">
+        <Image 
+          src="/Brazil_Flag.png" 
+          alt="Brazil Flag" 
+          width={16} 
+          height={12}
+          className="rounded-full"
+        />
+        Based in São Paulo, Brazil.
       </p>
       <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
         {externalLinks.map((link: Link) => (
@@ -116,14 +122,10 @@ export default function HomePage() {
       <div className="flex justify-center gap-6 max-sm:flex-col-reverse sm:justify-between">
         <div className="flex flex-col justify-center gap-4 max-sm:items-center">
           <div className="group -m-8 flex select-all items-center gap-3 p-8 transition-transform">
-            lukeberrypi@gmail.com
+            ppaivank@gmail.com
             <div className="inline-flex items-center gap-3">
-              {/* TODO add copy email
-                <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200">
-                <Copy className="size-4" />
-              </button> */}
               <a
-                href="mailto:lukeberrypi@gmail.com"
+                href="mailto:ppaivank@gmail.com"
                 className="text-zinc-800 dark:text-zinc-200"
               >
                 <Send strokeWidth={1.4} className="size-4" />
@@ -137,9 +139,9 @@ export default function HomePage() {
         </div>
         <div className="flex flex-col gap-2">
           <a
-            href="/luke-berry-cv.pdf"
-            download="Luke-Berry-CV.pdf"
-            className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-transform sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:sm:dark:hover:bg-zinc-800"
+            href="/Paulo_Paiva_Resume.pdf"
+            download="Paulo_Paiva_Resume.pdf"
+            className="flex flex-row items-center justify-center gap-3 rounded bg-sky-200 p-4 text-sky-800 ring-1 ring-sky-500 transition-transform sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:sm:dark:hover:bg-zinc-800"
           >
             <span className="text-nowrap">Download my CV</span>
             <Download strokeWidth={1.4} className="size-5 max-sm:hidden" />

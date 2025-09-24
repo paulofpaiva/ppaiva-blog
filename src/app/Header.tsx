@@ -54,9 +54,9 @@ export default function Header() {
             <ChevronLeft strokeWidth={1.4} />
           </div>
           <div className="flex flex-col max-sm:items-center">
-            Luke Berry
+            Paulo Paiva
             <span className="text-zinc-500 dark:text-zinc-400">
-              Software Engineer
+              Software Developer
             </span>
           </div>
         </Link>
@@ -80,11 +80,11 @@ export default function Header() {
           </button>
           <Link
             className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600 dark:ring-opacity-0"
-            href="/projects"
+            href="/"
             aria-label="View projects"
-            aria-current={path === "/projects" ? "page" : undefined}
+            aria-current={path === "/" ? "page" : undefined}
           >
-            /projects
+            /home
             <Triangle
               aria-hidden="true"
               className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
@@ -92,11 +92,11 @@ export default function Header() {
           </Link>
           <Link
             className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600 dark:ring-opacity-0"
-            href="/articles"
-            aria-label="View articles"
-            aria-current={path.startsWith("/articles") ? "page" : undefined}
+            href="/projects"
+            aria-label="View projects"
+            aria-current={path === "/projects" ? "page" : undefined}
           >
-            /articles
+            /projects
             <Triangle
               aria-hidden="true"
               className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
