@@ -1,10 +1,10 @@
 export default function AboutPage() {
   return (
     <>
-      <h1 className="mb-16 mt-4 text-center text-5xl max-sm:text-4xl">
+      <h1 className="mb-10 mt-4 text-center text-5xl max-sm:text-4xl">
         About me
       </h1>
-      <article>
+      <div className="flex flex-col gap-y-4">
         <p>
           Hey there! I&apos;m Paulo Paiva, a 22-year-old software developer from São Paulo, Brazil.
         </p>
@@ -21,15 +21,27 @@ export default function AboutPage() {
         </p> 
         <p>
           If you want to get in touch, send me a DM on{" "}
-          <a href="https://www.linkedin.com/in/paulo-paiva-672987292/">LinkedIn</a> or an email{" "}
-          <a href="mailto:ppaivank@gmail.com">ppaivank@gmail.com</a>.
+          <a 
+            href="https://www.linkedin.com/in/paulo-paiva-672987292/"
+            className="underline decoration-sky-500 underline-offset-4 dark:decoration-sky-600"
+            style={{ color: 'inherit' }}
+          >
+            LinkedIn
+          </a> or an email{" "}
+          <a 
+            href="mailto:ppaivank@gmail.com"
+            className="underline decoration-sky-500 underline-offset-4 dark:decoration-sky-600"
+            style={{ color: 'inherit' }}
+          >
+            ppaivank@gmail.com
+          </a>.
         </p>
         <p>
           Best,
           <br />
           Paulo Paiva
         </p>
-      </article>
+      </div>
     </>
   );
 }

@@ -2,9 +2,10 @@
 
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { projects } from "../../data/projects";
-import ProjectImageModal from "../../components/ProjectImageModal";
+import { ResponsiveModal } from "../../components/ui/responsive-modal";
+import { ImageGallery } from "../../components/ImageGallery";
 
 interface Project {
   id: string;
@@ -14,24 +15,6 @@ interface Project {
   technologies: string[];
 }
 
-// Memoize the color mapping to avoid recreating on every render
-const getTechnologyColor = (tech: string) => {
-  const colors: { [key: string]: string } = {
-    "React.js": "bg-[#00D8FE] text-zinc-950",
-    "TypeScript": "bg-[#007ACC] text-zinc-100",
-    ".NET": "bg-[#512BD4] text-zinc-100",
-    "PostgreSQL": "bg-[#336791] text-zinc-100",
-    "AI": "bg-gradient-to-r from-purple-500 to-pink-500 text-zinc-100",
-    "Mistral": "bg-[#FF6B35] text-zinc-100",
-    "ASP.NET Core": "bg-[#512BD4] text-zinc-100",
-    "Razor Views": "bg-[#512BD4] text-zinc-100",
-    "MVC": "bg-[#512BD4] text-zinc-100",
-    "JavaScript": "bg-[#F7DF1E] text-zinc-950",
-    "PL/SQL": "bg-[#F80000] text-zinc-100",
-    "Swagger": "bg-[#85EA2D] text-zinc-950",
-  };
-  return colors[tech] || "bg-zinc-500 text-zinc-100";
-};
 
 function ProjectCard({
   id,
@@ -50,7 +33,7 @@ function ProjectCard({
           {technologies.map((tech) => (
             <span
               key={tech}
-              className={`rounded-full px-2.5 py-0.5 text-sm ring-1 dark:ring-zinc-500 ring-zinc-600 whitespace-nowrap ${getTechnologyColor(tech)}`}
+              className="rounded-full px-2.5 py-0.5 text-sm ring-1 dark:ring-zinc-500 ring-zinc-600 whitespace-nowrap bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
             >
               {tech}
             </span>
@@ -78,25 +61,29 @@ function ProjectCard({
         </button>
       </div>
       
-      <ProjectImageModal
-        project={{ title, description, images }}
+      <ResponsiveModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-      />
+        title={title}
+        description={description}
+        className="sm:max-w-[55vw] sm:max-h-[95vh] overflow-hidden"
+      >
+        <div className="w-full h-[70vh] overflow-hidden">
+          <ImageGallery images={images} title={title} />
+        </div>
+      </ResponsiveModal>
     </div>
   );
 }
 
 export default function ProjectsPage() {
-  const memoizedProjects = useMemo(() => projects, []);
-
   return (
     <>
-      <h1 className="mb-16 mt-4 text-center text-5xl max-sm:text-4xl">
+      <h1 className="mb-10 mt-4 text-center text-5xl max-sm:text-4xl">
         Projects
       </h1>
       <div className="space-y-20">
-        {memoizedProjects.map((project: Project) => (
+        {projects.map((project: Project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
       </div>

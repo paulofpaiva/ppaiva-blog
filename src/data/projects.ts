@@ -19,7 +19,7 @@ export const projects: Project[] = [
       "/projects/carewave/5.png",
       "/projects/carewave/6.png"
     ],
-    technologies: ["React.js", "TypeScript", ".NET", "PostgreSQL"]
+    technologies: ["React.js", ".NET", "PostgreSQL"]
   },
   {
     id: "2", 
@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "/projects/ai-powered-clinical-assistant/1.png",
       "/projects/ai-powered-clinical-assistant/2.png",
     ],
-    technologies: ["AI", "React.js", "TypeScript", ".NET", "Mistral", "PostgreSQL"]
+    technologies: ["AI", "React.js", ".NET", "Mistral", "PostgreSQL"]
   },
   {
     id: "3", 
@@ -52,7 +52,7 @@ export const projects: Project[] = [
       "/projects/hospital-kiosk/2.jpeg",
       "/projects/hospital-kiosk/3.jpeg"
     ],
-    technologies: ["React.js", "TypeScript", ".NET", "Swagger", "PL/SQL"]
+    technologies: ["React.js", ".NET", "Swagger", "PL/SQL"]
   },
   {
     id: "5", 
