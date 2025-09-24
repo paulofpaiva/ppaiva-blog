@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Karla } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
-import Script from "next/script";
 import dynamic from "next/dynamic";
 import { Analytics } from "@vercel/analytics/next";
 
