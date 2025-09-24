@@ -6,10 +6,10 @@ export default function AboutPage() {
       </h1>
       <article>
         <p>
-          Hey there! I'm Paulo Paiva, a 22-year-old software developer from São Paulo, Brazil.
+          Hey there! I&apos;m Paulo Paiva, a 22-year-old software developer from São Paulo, Brazil.
         </p>
         <p>
-          I started programming in 2022 and since then I’ve been working with full-stack development. 
+          I started programming in 2022 and since then I&apos;ve been working with full-stack development. 
           On the frontend, I mostly work with React.js, Next.js, JavaScript, and CSS. 
           On the backend, I focus on C#, .NET, REST & Minimal APIs, Swagger/OpenAPI, and architectural patterns like MVC and CQRS.
         </p>
@@ -17,7 +17,7 @@ export default function AboutPage() {
           I also have experience with databases such as PostgreSQL, MySQL, Oracle PL/SQL, QuestDB, Supabase, and Firebase, as well as cloud and DevOps tools like Git, AWS (EC2, RDS, S3), Docker, IIS, Fly.io, Vercel, Render, and Railway.
         </p>
         <p>
-        I’m always looking for new challenges and opportunities to grow. If you’re hiring or would like to collaborate, feel free to reach out!
+        I&apos;m always looking for new challenges and opportunities to grow. If you&apos;re hiring or would like to collaborate, feel free to reach out!
         </p> 
         <p>
           If you want to get in touch, send me a DM on{" "}
