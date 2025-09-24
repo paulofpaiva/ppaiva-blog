@@ -29,11 +29,11 @@ function ProjectCard({
     <div className="flex-col divide-y divide-zinc-400 overflow-hidden rounded ring-1 dark:zinc-500 dark:ring-zinc-500 ring-zinc-600">
       <div className="flex items-center justify-between gap-4 p-4 max-sm:flex-col max-sm:items-start">
         <h2 className="text-xl">{title}</h2>
-        <div className="flex items-center gap-2 flex-wrap max-sm:gap-1">
+        <div className="flex items-center gap-1.5 flex-wrap max-sm:gap-1">
           {technologies.map((tech) => (
             <span
               key={tech}
-              className="rounded-full px-2.5 py-0.5 text-sm ring-1 dark:ring-zinc-500 ring-zinc-600 whitespace-nowrap bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
+              className="rounded-full px-2 py-0.5 text-xs ring-1 dark:ring-zinc-500 ring-zinc-600 whitespace-nowrap bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
             >
               {tech}
             </span>
