@@ -82,7 +82,7 @@ export default function ProjectsPage() {
       <h1 className="mb-10 mt-4 text-center text-5xl max-sm:text-4xl">
         Projects
       </h1>
-      <div className="space-y-20">
+      <div className="space-y-10">
         {projects.map((project: Project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
