@@ -66,13 +66,13 @@ const externalLinks: Link[] = [
     name: "Email",
     description: "email me",
     url: "mailto:ppaivank@gmail.com",
-    icon: <SiGmail className="fill-[#0077B5] dark:fill-zinc-200" />,
+    icon: <SiGmail className="fill-[#E53D39] dark:fill-zinc-200" />,
   },
   {
     name: "WhatsApp",
     description: "message me",
     url: "https://wa.me/5511993151155?text=Hi Paulo! I saw your portfolio and would like to discuss work opportunities.",
-    icon: <SiWhatsapp />,
+    icon: <SiWhatsapp className="fill-[#25D366] dark:fill-zinc-200" />,
   },
 ];
 
@@ -101,10 +101,10 @@ const ExternalLink = (link: Link) => {
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
-      <p className="text-sm">
-      Building full-stack apps that solve problems since 2022, learning how to make them work better, faster, and at scale.
+      <p className="text-sm text-zinc-700 dark:text-zinc-400">
+      Building full-stack apps that solve problems, and learning to make them work better, faster, and at scale since 2022.
       </p>
-      <p className="text-sm flex items-center gap-2">
+      <p className="text-sm flex items-center gap-2 text-zinc-700 dark:text-zinc-400">
         <Image 
           src="/Brazil_Flag.png" 
           alt="Brazil Flag" 
@@ -126,7 +126,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-3">
               <a
                 href="mailto:ppaivank@gmail.com"
-                className="text-zinc-800 dark:text-zinc-200"
+                className="text-foreground"
               >
                 <Send strokeWidth={1.4} className="size-4" />
               </a>

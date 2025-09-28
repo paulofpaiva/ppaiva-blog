@@ -1,44 +1,14 @@
 "use client";
 
-import { ChevronLeft, Moon, Sun, Triangle } from "lucide-react";
+import { ChevronLeft, Triangle, Sun, Moon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-
-function isThemeSetToDark() {
-  if (window == undefined) return;
-
-  return (
-    localStorage.theme === "dark" ||
-    (!("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  );
-}
+import { useTheme } from "../contexts/ThemeContext";
 
 export default function Header() {
   const path = usePathname();
   const isHome = path === "/";
-  const [isDarkMode, setIsDarkMode] = useState(isThemeSetToDark());
-
-  useEffect(() => {
-    if (isThemeSetToDark()) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    if (isDarkMode) {
-      localStorage.theme = "light";
-      document.documentElement.classList.remove("dark");
-      setIsDarkMode(false);
-    } else {
-      localStorage.theme = "dark";
-      document.documentElement.classList.add("dark");
-      setIsDarkMode(true);
-    }
-  };
+  const { theme, setTheme, resolvedTheme } = useTheme();
 
   return (
     <header className="mx-auto max-w-prose py-8 max-sm:pt-4">
@@ -62,14 +32,14 @@ export default function Header() {
         </Link>
         <div className="flex items-center gap-4">
           <button
-            onClick={() => toggleTheme()}
+            onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
             className="group relative flex items-center"
             aria-label="Toggle theme"
           >
-            {isDarkMode ? (
+            {resolvedTheme === 'dark' ? (
               <Moon
                 strokeWidth={1.4}
-                className="size-5 fill-gray-700 transition-transform"
+                className="size-5 fill-gray-700 transition-transform dark:fill-zinc-200"
               />
             ) : (
               <Sun

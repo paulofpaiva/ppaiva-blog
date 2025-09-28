@@ -5,20 +5,30 @@ export default function AboutPage() {
         About me
       </h1>
       <div className="flex flex-col gap-y-4">
-        <p>
-          Hey there! I&apos;m Paulo Paiva, a 22-year-old software developer from São Paulo, Brazil.
-        </p>
-        <p>
-          I started programming in 2022 and since then I&apos;ve been working with full-stack development. 
-          On the frontend, I mostly work with React.js, Next.js, JavaScript, and CSS. 
-          On the backend, I focus on C#, .NET, REST & Minimal APIs, Swagger/OpenAPI, and architectural patterns like MVC and CQRS.
-        </p>
-        <p>
-          I also have experience with databases such as PostgreSQL, MySQL, Oracle PL/SQL, QuestDB, Supabase, and Firebase, as well as cloud and DevOps tools like Git, AWS (EC2, RDS, S3), Docker, IIS, Fly.io, Vercel, Render, and Railway.
-        </p>
-        <p>
-        I&apos;m always looking for new challenges and opportunities to grow. If you&apos;re hiring or would like to collaborate, feel free to reach out!
-        </p> 
+      <p>
+        I&apos;m Paulo Paiva, a 22-year-old software developer from S&atilde;o Paulo, Brazil.
+      </p>
+      <p>
+        I started programming in 2022 and since then I&apos;ve been working with full-stack development. 
+      </p>        
+      <p>
+        On the frontend, I work mainly with React.js and Next.js, using JavaScript and CSS frameworks like Tailwind, Bootstrap and Bulma to build modern and responsive interfaces.  
+      </p>
+      <p>
+        On the backend, my focus is on C# and .NET, where I&apos;ve built microservices and REST/Minimal APIs, following architectural patterns such as MVC and CQRS.  
+      </p>
+      <p>
+        I also have hands-on experience with AWS, especially EC2 for compute, S3 for storage, RDS for relational databases, and SQS for message queues.  
+      </p>
+      <p>
+        When it comes to data, I&apos;ve worked with relational databases like PostgreSQL, MySQL, Oracle PL/SQL, QuestDB, Supabase, and Firebase.  
+      </p>
+      <p>
+        For DevOps and deployment, I&apos;m comfortable using Git, Docker, IIS, and cloud platforms such as Fly.io, Vercel, Render, and Railway.  
+      </p>
+      <p>
+        I&apos;m always looking for new challenges and opportunities to grow. If you&apos;re hiring or would like to collaborate, feel free to reach out.
+      </p>
         <p>
           If you want to get in touch, send me a DM on{" "}
           <a 

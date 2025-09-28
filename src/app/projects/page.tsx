@@ -33,7 +33,7 @@ function ProjectCard({
           {technologies.map((tech) => (
             <span
               key={tech}
-              className="rounded-full px-2 py-0.5 text-xs ring-1 dark:ring-zinc-500 ring-zinc-600 whitespace-nowrap bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
+              className="rounded-full px-2 py-0.5 text-xs ring-1 dark:ring-zinc-500 ring-zinc-600 whitespace-nowrap bg-zinc-100 text-zinc-900 dark:bg-transparent dark:text-zinc-100"
             >
               {tech}
             </span>
@@ -41,7 +41,7 @@ function ProjectCard({
         </div>
       </div>
       <div>
-        <p className="p-4">{description}</p>
+        <p className="p-4 text-zinc-700 dark:text-zinc-400">{description}</p>
       </div>
       <Image
         src={images[0]}
