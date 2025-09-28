@@ -8,6 +8,7 @@ interface ThemeContextType {
   theme: Theme
   setTheme: (theme: Theme) => void
   resolvedTheme: 'light' | 'dark'
+  mounted: boolean
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
@@ -20,8 +21,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   })
 
   const [resolvedTheme, setResolvedTheme] = useState<'light' | 'dark'>('dark')
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (!mounted) return
+
     const updateResolvedTheme = () => {
       if (theme === 'system') {
         const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
@@ -38,7 +46,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       mediaQuery.addEventListener('change', updateResolvedTheme)
       return () => mediaQuery.removeEventListener('change', updateResolvedTheme)
     }
-  }, [theme])
+  }, [theme, mounted])
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -51,7 +59,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, [theme, resolvedTheme])
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme, resolvedTheme }}>
+    <ThemeContext.Provider value={{ theme, setTheme, resolvedTheme, mounted }}>
       {children}
     </ThemeContext.Provider>
   )

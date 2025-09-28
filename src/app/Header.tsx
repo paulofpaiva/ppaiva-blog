@@ -8,7 +8,7 @@ import { useTheme } from "../contexts/ThemeContext";
 export default function Header() {
   const path = usePathname();
   const isHome = path === "/";
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme, mounted } = useTheme();
 
   return (
     <header className="mx-auto max-w-prose py-8 max-sm:pt-4">
@@ -31,23 +31,25 @@ export default function Header() {
           </div>
         </Link>
         <div className="flex items-center gap-4">
-          <button
-            onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-            className="group relative flex items-center"
-            aria-label="Toggle theme"
-          >
-            {resolvedTheme === 'dark' ? (
-              <Moon
-                strokeWidth={1.4}
-                className="size-5 fill-gray-700 transition-transform dark:fill-zinc-200"
-              />
-            ) : (
-              <Sun
-                strokeWidth={1.4}
-                className="size-5 fill-yellow-300 transition-transform sm:hover:rotate-45"
-              />
-            )}
-          </button>
+          {mounted && (
+            <button
+              onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+              className="group relative flex items-center"
+              aria-label="Toggle theme"
+            >
+              {resolvedTheme === 'dark' ? (
+                <Moon
+                  strokeWidth={1.4}
+                  className="size-5 fill-gray-700 transition-transform dark:fill-zinc-200"
+                />
+              ) : (
+                <Sun
+                  strokeWidth={1.4}
+                  className="size-5 fill-yellow-300 transition-transform sm:hover:rotate-45"
+                />
+              )}
+            </button>
+          )}
           <Link
             className="group relative rounded px-2 py-px sm:hover:ring-1 ring-sky-500 transition-transform dark:ring-sky-600 dark:ring-opacity-0"
             href="/"
