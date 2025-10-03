@@ -7,14 +7,11 @@ export default function AboutPage() {
       <div className="flex flex-col gap-y-4">
       <p>
         I&apos;m Paulo Paiva, a 22-year-old software developer from S&atilde;o Paulo, Brazil.
-      </p>
-      <p>
         I began my journey in programming in 2022 and quickly immersed myself in the world of full-stack development.
-      </p>        
+
+      </p> 
       <p>
         When I&apos;m not coding, you&apos;ll probably find me playing guitar, spending time with my golden retriever Milo, or hitting the gym.
-      </p>
-      <p>
         Just as these activities keep me balanced outside of work, coding is where I challenge myself the most.
       </p>
       <p>
@@ -31,10 +28,12 @@ export default function AboutPage() {
         When it comes to data, I have experience with relational databases such as PostgreSQL, MySQL, and Oracle PL/SQL, as well as platforms like QuestDB, Supabase, and Firebase. My work includes designing schemas, building views, stored procedures, and functions, and apply
       </p>
       <p>
-        For DevOps and deployment, I&apos;m experienced with Git for version control, Docker for containerization, and IIS for hosting .NET applications. I&apos;ve also deployed and maintained applications on cloud platforms such as Fly.io, Vercel, Render, and Railway, applying CI/CD pipelines and environment-specific configurations.
+        For DevOps and deployment, I&apos;m experienced with Git for version control, Docker for containerization, and IIS for hosting .NET applications.
+        I&apos;ve also deployed and maintained applications on cloud platforms such as Fly.io, Vercel, Render, and Railway, applying CI/CD pipelines and environment-specific configurations.
       </p>
-        <p>
-          Send me a DM on{" "}
+      <p>
+        I&apos;m always looking for new challenges and opportunities to grow. If you&apos;re hiring or would like to collaborate, feel free to reach out.
+        Send me a DM on{" "}
           <a 
             href="https://www.linkedin.com/in/paulo-paiva-672987292/"
             className="underline decoration-sky-500 underline-offset-4 dark:decoration-sky-600"
