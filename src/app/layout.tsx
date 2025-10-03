@@ -3,7 +3,7 @@ import { Karla } from "next/font/google";
 import "./globals.css";
 import { ScrollToTop } from "../components/scroll-to-top";
 import { Analytics } from "@vercel/analytics/next";
-import Header from "./Header";
+import Header from "../components/Header";
 import { ThemeProvider } from "../contexts/ThemeContext";
 
 export const metadata: Metadata = {

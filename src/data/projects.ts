@@ -4,9 +4,24 @@ export interface Project {
   description: string;
   images: string[];
   technologies: string[];
+  hasCode?: boolean;
+  codeUrl?: string;
+  hasPhotos?: boolean;
 }
 
 export const projects: Project[] = [
+  {
+    id: "0",
+    title: ".NET AWS Image Processor API", 
+    description: "Minimal .NET 9 REST API to upload, list, and download images from an S3 bucket, and publish file metadata to AWS SQS for asynchronous processing.",
+    images: [
+      "/projects/dotnet-aws-image-processor/aws-logo-logo.png"
+    ],
+    technologies: [".NET 9", "AWS S3", "AWS SQS", "Docker"],
+    hasCode: true,
+    codeUrl: "https://github.com/paulofpaiva/api-image-processor-aws",
+    hasPhotos: false
+  },
   {
     id: "1",
     title: "ABA Therapy management",
@@ -19,17 +34,19 @@ export const projects: Project[] = [
       "/projects/carewave/5.png",
       "/projects/carewave/6.png"
     ],
-    technologies: ["React.js", ".NET", "PostgreSQL"]
+    technologies: ["React.js", ".NET", "PostgreSQL"],
+    hasPhotos: true
   },
   {
     id: "2", 
-    title: "AI-powered clinical assistant",
+    title: "AI-Powered clinical assistant",
     description: "An AI-powered clinical assistant designed to help medical professionals generate patient evolution summaries and receive intelligent diagnostic insights, streamlining decision-making, enhancing accuracy, and improving overall efficiency in clinical workflows.", 
     images: [
       "/projects/ai-powered-clinical-assistant/1.png",
       "/projects/ai-powered-clinical-assistant/2.png",
     ],
-    technologies: ["AI", "React.js", ".NET", "Mistral", "PostgreSQL"]
+    technologies: ["AI", "React.js", ".NET", "Mistral", "PostgreSQL"],
+    hasPhotos: true
   },
   {
     id: "3", 
@@ -41,7 +58,8 @@ export const projects: Project[] = [
       "/projects/medical-portal/3.png",
       "/projects/medical-portal/4.png"
     ],
-    technologies: ["ASP.NET Core", "Razor Views", "MVC", "JavaScript", "PL/SQL"]
+    technologies: ["ASP.NET Core", "Razor Views", "MVC", "JavaScript", "PL/SQL"],
+    hasPhotos: true
   },
   {
     id: "4", 
@@ -52,7 +70,8 @@ export const projects: Project[] = [
       "/projects/hospital-kiosk/2.jpeg",
       "/projects/hospital-kiosk/3.jpeg"
     ],
-    technologies: ["React.js", ".NET", "Swagger", "PL/SQL"]
+    technologies: ["React.js", ".NET", "Swagger", "PL/SQL"],
+    hasPhotos: true
   },
   {
     id: "5", 
@@ -62,7 +81,8 @@ export const projects: Project[] = [
       "/projects/portal-beneficiary/1.jpeg",
       "/projects/portal-beneficiary/2.png",
     ],
-    technologies: ["ASP.NET Core", "Razor Views", "MVC", "JavaScript", "PL/SQL"]
+    technologies: ["ASP.NET Core", "Razor Views", "MVC", "JavaScript", "PL/SQL"],
+    hasPhotos: true
   },
   
 ];

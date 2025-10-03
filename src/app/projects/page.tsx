@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, GitBranch } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { projects } from "../../data/projects";
@@ -13,6 +13,9 @@ interface Project {
   description: string;
   images: string[];
   technologies: string[];
+  hasCode?: boolean;
+  codeUrl?: string;
+  hasPhotos?: boolean;
 }
 
 
@@ -22,6 +25,9 @@ function ProjectCard({
   description,
   images,
   technologies,
+  hasCode,
+  codeUrl,
+  hasPhotos,
 }: Project) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -46,20 +52,34 @@ function ProjectCard({
       <Image
         src={images[0]}
         width={1200}
-        height={630}
+        height={400}
         alt={`${title} project image`}
         priority={false}
         loading="lazy"
+        className="w-full h-32 sm:h-48 md:h-56 lg:h-64 object-cover"
       />
-      <div className="flex w-full justify-center">
-        <button
-          onClick={() => setIsModalOpen(true)}
-          className="flex items-center justify-center gap-2 py-4 px-8 transition-transform sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
-        >
-          View photos
-          <ExternalLink strokeWidth={1.4} className="size-4" />
-        </button>
-      </div>
+        <div className="flex w-full justify-between divide-x divide-zinc-400 dark:divide-zinc-500">
+          {hasCode && codeUrl && (
+            <a
+              href={codeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex grow items-center justify-center gap-2 py-4 transition-transform sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
+            >
+              <GitBranch strokeWidth={1.4} className="size-5" />
+              View code
+            </a>
+          )}
+          {hasPhotos && (
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="flex grow items-center justify-center gap-2 py-4 transition-transform sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800"
+            >
+              <ExternalLink strokeWidth={1.4} className="size-5" />
+              View photos
+            </button>
+          )}
+        </div>
       
       <ResponsiveModal
         isOpen={isModalOpen}
