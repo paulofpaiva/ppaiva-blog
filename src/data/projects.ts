@@ -34,7 +34,7 @@ export const projects: Project[] = [
       "/projects/carewave/5.png",
       "/projects/carewave/6.png"
     ],
-    technologies: ["React.js", ".NET", "PostgreSQL"],
+    technologies: ["React", ".NET", "PostgreSQL"],
     hasPhotos: true
   },
   {
@@ -45,7 +45,7 @@ export const projects: Project[] = [
       "/projects/ai-powered-clinical-assistant/1.png",
       "/projects/ai-powered-clinical-assistant/2.png",
     ],
-    technologies: ["AI", "React.js", ".NET", "Mistral", "PostgreSQL"],
+    technologies: ["AI", "React", ".NET", "Mistral", "PostgreSQL"],
     hasPhotos: true
   },
   {
@@ -58,7 +58,7 @@ export const projects: Project[] = [
       "/projects/medical-portal/3.png",
       "/projects/medical-portal/4.png"
     ],
-    technologies: ["ASP.NET Core", "Razor Views", "MVC", "JavaScript", "PL/SQL"],
+    technologies: ["ASP.NET Core", "MVC", "JavaScript", "PL/SQL"],
     hasPhotos: true
   },
   {
@@ -70,7 +70,7 @@ export const projects: Project[] = [
       "/projects/hospital-kiosk/2.jpeg",
       "/projects/hospital-kiosk/3.jpeg"
     ],
-    technologies: ["React.js", ".NET", "Swagger", "PL/SQL"],
+    technologies: ["React", ".NET", "C#", "PL/SQL"],
     hasPhotos: true
   },
   {
@@ -81,7 +81,7 @@ export const projects: Project[] = [
       "/projects/portal-beneficiary/1.jpeg",
       "/projects/portal-beneficiary/2.png",
     ],
-    technologies: ["ASP.NET Core", "Razor Views", "MVC", "JavaScript", "PL/SQL"],
+    technologies: ["ASP.NET Core", "MVC", "JavaScript", "PL/SQL"],
     hasPhotos: true
   },
   

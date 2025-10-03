@@ -9,42 +9,46 @@ export default function AboutPage() {
         I&apos;m Paulo Paiva, a 22-year-old software developer from S&atilde;o Paulo, Brazil.
       </p>
       <p>
-        I started programming in 2022 and since then I&apos;ve been working with full-stack development. 
+        I began my journey in programming in 2022 and quickly immersed myself in the world of full-stack development.
       </p>        
       <p>
-        On the frontend, I work mainly with React.js and Next.js, using JavaScript and CSS frameworks like Tailwind, Bootstrap and Bulma to build modern and responsive interfaces.  
+        When I&apos;m not coding, you&apos;ll probably find me playing guitar, spending time with my golden retriever Milo, or hitting the gym.
       </p>
       <p>
-        On the backend, my focus is on C# and .NET, where I&apos;ve built microservices and REST/Minimal APIs, following architectural patterns such as MVC and CQRS.  
+        Just as these activities keep me balanced outside of work, coding is where I challenge myself the most.
       </p>
       <p>
-        I also have hands-on experience with AWS, especially EC2 for compute, S3 for storage, RDS for relational databases, and SQS for message queues.  
+        On the frontend, I work mainly with React.js and Next.js, using JavaScript and CSS frameworks like Tailwind, Bootstrap and Bulma to build responsive user interfaces.  
       </p>
       <p>
-        When it comes to data, I&apos;ve worked with relational databases like PostgreSQL, MySQL, Oracle PL/SQL, QuestDB, Supabase, and Firebase.  
+        On the backend, I work extensively with the .NET ecosystem, developing microservices and REST/Minimal APIs, and applying architectural patterns like MVC, CQRS, and DDD.
+        I have solid experience across authentication, authorization, logging, dependency injection, and database access, ensuring scalable and enterprise-grade solutions.
       </p>
       <p>
-        For DevOps and deployment, I&apos;m comfortable using Git, Docker, IIS, and cloud platforms such as Fly.io, Vercel, Render, and Railway.  
+        I also have solid hands-on experience with AWS, architecting and deploying solutions that integrate EC2, S3, RDS, and SQS to build fault-tolerant, scalable, and production-ready systems.
       </p>
       <p>
-        I&apos;m always looking for new challenges and opportunities to grow. If you&apos;re hiring or would like to collaborate, feel free to reach out.
+        When it comes to data, I have experience with relational databases such as PostgreSQL, MySQL, and Oracle PL/SQL, as well as platforms like QuestDB, Supabase, and Firebase. My work includes designing schemas, building views, stored procedures, and functions, and apply
+      </p>
+      <p>
+        For DevOps and deployment, I&apos;m experienced with Git for version control, Docker for containerization, and IIS for hosting .NET applications. I&apos;ve also deployed and maintained applications on cloud platforms such as Fly.io, Vercel, Render, and Railway, applying CI/CD pipelines and environment-specific configurations.
       </p>
         <p>
-          If you want to get in touch, send me a DM on{" "}
+          Send me a DM on{" "}
           <a 
             href="https://www.linkedin.com/in/paulo-paiva-672987292/"
             className="underline decoration-sky-500 underline-offset-4 dark:decoration-sky-600"
             style={{ color: 'inherit' }}
           >
             LinkedIn
-          </a> or an email{" "}
+          </a> or an email at{" "}
           <a 
             href="mailto:ppaivank@gmail.com"
             className="underline decoration-sky-500 underline-offset-4 dark:decoration-sky-600"
             style={{ color: 'inherit' }}
           >
             ppaivank@gmail.com
-          </a>.
+          </a>!
         </p>
         <p>
           Best,

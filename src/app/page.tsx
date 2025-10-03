@@ -102,7 +102,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
       <p className="text-sm text-zinc-700 dark:text-zinc-400">
-      Building full-stack apps that solve problems, and learning to make them work better, faster, and at scale since 2022.
+      Building full-stack apps that solve problems, and learning to make them work better, faster, and at scale.
       </p>
       <p className="text-sm flex items-center gap-2 text-zinc-700 dark:text-zinc-400">
         <Image 
@@ -143,7 +143,7 @@ export default function HomePage() {
             download="Paulo_Paiva_Resume.pdf"
             className="flex flex-row items-center justify-center gap-3 rounded bg-sky-200 p-4 text-sky-800 ring-1 ring-sky-500 transition-transform sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:sm:dark:hover:bg-zinc-800"
           >
-            <span className="text-nowrap">Download my CV</span>
+            <span className="text-nowrap">Download my resume</span>
             <Download strokeWidth={1.4} className="size-5 max-sm:hidden" />
           </a>
         </div>
