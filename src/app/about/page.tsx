@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <>
+    <div className="mx-auto max-w-prose">
       <h1 className="mb-10 mt-4 text-center text-5xl max-sm:text-4xl">
         About me
       </h1>
@@ -56,6 +56,6 @@ export default function AboutPage() {
           Paulo Paiva
         </p>
       </div>
-    </>
+    </div>
   );
 }

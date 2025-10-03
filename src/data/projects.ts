@@ -15,15 +15,27 @@ export const projects: Project[] = [
     title: ".NET AWS Image Processor API", 
     description: "Minimal .NET 9 REST API to upload, list, and download images from an S3 bucket, and publish file metadata to AWS SQS for asynchronous processing.",
     images: [
-      "/projects/dotnet-aws-image-processor/aws-logo-logo.png"
+      "/projects/dotnet-aws-image-processor/aws_services_dotnet.png"
     ],
     technologies: [".NET 9", "AWS S3", "AWS SQS", "Docker"],
     hasCode: true,
     codeUrl: "https://github.com/paulofpaiva/api-image-processor-aws",
-    hasPhotos: false
+    hasPhotos: true
   },
   {
     id: "1",
+    title: "Node + Express BetterNotes API",
+    description: "A RESTful API built with Node.js + Express and PostgreSQL (via Drizzle ORM) for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
+    images: [
+      "/projects/better-notes/node_express_postgres_drizzle.png"
+    ],
+    technologies: ["Node.js", "Express", "PostgreSQL", "Drizzle ORM", "TypeScript"],
+    hasCode: true,
+    codeUrl: "https://github.com/paulofpaiva/better-notes-api",
+    hasPhotos: true
+  },
+  {
+    id: "3",
     title: "ABA Therapy management",
     description: "A complete management system for ABA therapy clinics, including patient and caregiver registration, therapeutic programs, stimuli, protocols, and progress analysis with detailed graphical indicators.",
     images: [
@@ -35,10 +47,11 @@ export const projects: Project[] = [
       "/projects/carewave/6.png"
     ],
     technologies: ["React", ".NET", "PostgreSQL"],
-    hasPhotos: true
+    hasPhotos: true,
+    hasCode: true
   },
   {
-    id: "2", 
+    id: "4", 
     title: "AI-Powered clinical assistant",
     description: "An AI-powered clinical assistant designed to help medical professionals generate patient evolution summaries and receive intelligent diagnostic insights, streamlining decision-making, enhancing accuracy, and improving overall efficiency in clinical workflows.", 
     images: [
@@ -46,10 +59,11 @@ export const projects: Project[] = [
       "/projects/ai-powered-clinical-assistant/2.png",
     ],
     technologies: ["AI", "React", ".NET", "Mistral", "PostgreSQL"],
-    hasPhotos: true
+    hasPhotos: true,
+    hasCode: false
   },
   {
-    id: "3", 
+    id: "5", 
     title: "Medical Portal Plataform",
     description: "A web platform developed to help medical professionals manage their full schedules and handle appointment and service requests efficiently, improving daily operations and optimizing hospital workflows.",
     images: [
@@ -59,22 +73,25 @@ export const projects: Project[] = [
       "/projects/medical-portal/4.png"
     ],
     technologies: ["ASP.NET Core", "MVC", "JavaScript", "PL/SQL"],
-    hasPhotos: true
+    hasPhotos: true,
+    hasCode: false
   },
   {
-    id: "4", 
+    id: "6", 
     title: "Hospital Check-in Kiosk",
     description: "An intuitive self-service kiosk system for hospitals that streamlines patient check-ins, appointment scheduling, and navigation within hospital facilities.",
     images: [
+      "/projects/hospital-kiosk/totem_intro_1.png",
       "/projects/hospital-kiosk/1.jpeg",
       "/projects/hospital-kiosk/2.jpeg",
       "/projects/hospital-kiosk/3.jpeg"
     ],
     technologies: ["React", ".NET", "C#", "PL/SQL"],
-    hasPhotos: true
+    hasPhotos: true,
+    hasCode: false
   },
   {
-    id: "5", 
+    id: "7", 
     title: "Beneficiary Portal Plataform",
     description: "A modern and secure web platform built for allowing patients to manage personal information, medical history, invoices, and appointments, enhancing patient autonomy and streamlining administrative workflows.",
     images: [
@@ -82,7 +99,8 @@ export const projects: Project[] = [
       "/projects/portal-beneficiary/2.png",
     ],
     technologies: ["ASP.NET Core", "MVC", "JavaScript", "PL/SQL"],
-    hasPhotos: true
+    hasPhotos: true,
+    hasCode: false
   },
   
 ];

@@ -100,7 +100,7 @@ const ExternalLink = (link: Link) => {
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="mx-auto max-w-prose flex flex-col gap-6">
       <p className="text-sm text-zinc-700 dark:text-zinc-400">
       Building full-stack apps that solve problems, and learning to make them work better, faster, and at scale.
       </p>

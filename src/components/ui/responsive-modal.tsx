@@ -1,6 +1,6 @@
 "use client";
 
-import { Dialog, DialogContent, DialogTitle } from "./dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "./dialog";
 import { Button } from "./button";
 import { ArrowLeft } from "lucide-react";
 import { useIsMobile } from "../../hooks/useIsMobile";
@@ -10,6 +10,7 @@ interface ResponsiveModalProps {
   onClose: () => void;
   title: string;
   description?: string;
+  technologies?: string[];
   children: React.ReactNode;
   className?: string;
   actionButton?: React.ReactNode;
@@ -20,6 +21,7 @@ export function ResponsiveModal({
   onClose,
   title,
   description,
+  technologies,
   children,
   className = "",
   actionButton
@@ -46,9 +48,16 @@ export function ResponsiveModal({
             </Button>
             <div className="flex-1">
               <h2 className="text-lg font-semibold text-foreground">{title}</h2>
-              {description && (
-                <p className="text-sm text-muted-foreground">{description}</p>
-              )}
+              <div className="flex flex-col gap-1">
+                {description && (
+                  <p className="text-sm text-muted-foreground break-words overflow-hidden max-w-full">{description}</p>
+                )}
+                {technologies && technologies.length > 0 && (
+                  <p className="text-xs text-muted-foreground">
+                    <span className="font-medium">Technologies:</span> {technologies.join(', ')}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
           {actionButton && (
@@ -69,20 +78,27 @@ export function ResponsiveModal({
     <div className="hidden sm:block">
       <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent 
-          className={`sm:max-w-[90vw] sm:max-h-[90vh] ${className}`} 
+          className={`max-w-[95vw] max-h-[95vh] sm:max-w-[90vw] sm:max-h-[90vh] flex flex-col ${className}`} 
           autoFocus={false}
           onOpenAutoFocus={(e) => e.preventDefault()}
         >
-          <DialogTitle className="sr-only">{title}</DialogTitle>
-          
-          <div className="mb-4">
-            <h2 className="text-lg font-semibold text-foreground">{title}</h2>
-            {description && (
-              <p className="text-sm text-muted-foreground">{description}</p>
-            )}
-          </div>
+          <DialogHeader className="flex-shrink-0">
+            <DialogTitle>{title}</DialogTitle>
+            <div className="space-y-2">
+              {description && (
+                <DialogDescription className="break-words overflow-hidden max-w-full">{description}</DialogDescription>
+              )}
+              {technologies && technologies.length > 0 && (
+                <p className="text-sm text-muted-foreground">
+                  <span className="font-medium">Technologies:</span> {technologies.join(', ')}
+                </p>
+              )}
+            </div>
+          </DialogHeader>
 
-          {children}
+          <div className="flex-1 overflow-hidden">
+            {children}
+          </div>
         </DialogContent>
       </Dialog>
     </div>

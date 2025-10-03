@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Karla } from "next/font/google";
 import "./globals.css";
-import { ScrollToTop } from "../components/scroll-to-top";
+import { ScrollToTop } from "../components/ScrollToTop";
 import { Analytics } from "@vercel/analytics/next";
 import Header from "../components/Header";
 import { ThemeProvider } from "../contexts/ThemeContext";
@@ -52,7 +52,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Analytics />
           <Header />
-          <main className="mx-auto max-w-prose pb-4">
+          <main className="mx-auto pb-4">
             {children}
             <ScrollToTop />
           </main>
