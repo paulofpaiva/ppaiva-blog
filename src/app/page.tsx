@@ -3,7 +3,6 @@ import {
   SiGmail,
   SiGmailHex,
   SiLinkedin,
-  SiWhatsapp,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Download, Send } from "lucide-react";
@@ -67,12 +66,6 @@ const externalLinks: Link[] = [
     description: "email me",
     url: "mailto:ppaivank@gmail.com",
     icon: <SiGmail className="fill-[#E53D39] dark:fill-zinc-200" />,
-  },
-  {
-    name: "WhatsApp",
-    description: "message me",
-    url: "https://wa.me/5511993151155?text=Hi Paulo! I saw your portfolio and would like to discuss work opportunities.",
-    icon: <SiWhatsapp className="fill-[#25D366] dark:fill-zinc-200" />,
   },
 ];
 
