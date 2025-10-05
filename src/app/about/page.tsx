@@ -15,17 +15,18 @@ export default function AboutPage() {
         Just as these activities keep me balanced outside of work, coding is where I challenge myself the most.
       </p>
       <p>
-        On the frontend, I work mainly with React.js and Next.js, using JavaScript and CSS frameworks like Tailwind, Bootstrap and Bulma to build responsive user interfaces.  
+        On the frontend, I work mainly with React.js and Next.js using JavaScript, and CSS frameworks like Tailwind, Bootstrap and Bulma to build responsive user interfaces.  
       </p>
       <p>
-        On the backend, I work extensively with the .NET ecosystem, developing microservices and REST/Minimal APIs, and applying architectural patterns like MVC, CQRS, and DDD.
-        I have solid experience across authentication, authorization, logging, dependency injection, and database access, ensuring scalable and enterprise-grade solutions.
+        On the backend, I work extensively with the .NET ecosystem, developing microservices and REST APIs, and applying architectural patterns like MVC, CQRS, and DDD.
+        I have solid experience across authentication, authorization, logging, dependency injection, and database access.
       </p>
       <p>
-        I also have solid hands-on experience with AWS, architecting and deploying solutions that integrate EC2, S3, RDS, and SQS to build fault-tolerant, scalable, and production-ready systems.
+        I also have solid hands-on experience with AWS, architecting and deploying solutions that integrate EC2, S3, RDS, and SQS to build scalable and production-ready systems.
       </p>
       <p>
-        When it comes to data, I have experience with relational databases such as PostgreSQL, MySQL, and Oracle PL/SQL, as well as platforms like QuestDB, Supabase, and Firebase. My work includes designing schemas, building views, stored procedures, and functions, and apply
+        When it comes to data, I have experience with relational databases such as PostgreSQL, MySQL, and Oracle PL/SQL, as well as platforms like QuestDB and Supabase. 
+        My work includes designing schemas, building views, stored procedures and functions.
       </p>
       <p>
         For DevOps and deployment, I&apos;m experienced with Git for version control, Docker for containerization, and IIS for hosting .NET applications.
