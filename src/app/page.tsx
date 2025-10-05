@@ -100,7 +100,7 @@ export default function HomePage() {
       <p className="text-sm flex items-center gap-2 text-zinc-700 dark:text-zinc-400">
         <Image 
           src="/Brazil_Flag.png" 
-          alt="Brazil Flag" 
+          alt=" - " 
           width={16} 
           height={12}
           className="rounded-full"
