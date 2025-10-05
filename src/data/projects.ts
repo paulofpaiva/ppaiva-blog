@@ -35,6 +35,18 @@ export const projects: Project[] = [
     hasPhotos: true
   },
   {
+    id: "2",
+    title: "ApisCP + Node + Express API",
+    description: "A RESTful API built with Node.js + Express for ApisCP server integration,   allowing you to list domains and collect account information.",
+    images: [
+      "/projects/apiscp-api/node_express_apiscp.png"
+    ],
+    technologies: ["Node.js", "Express", "ApisCP"],
+    hasCode: true,
+    codeUrl: "https://github.com/paulofpaiva/apiscp-api",
+    hasPhotos: true
+  },
+  {
     id: "3",
     title: "ABA Therapy management",
     description: "A complete management system for ABA therapy clinics, including patient and caregiver registration, therapeutic programs, stimuli, protocols, and progress analysis with detailed graphical indicators.",
