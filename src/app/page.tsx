@@ -51,19 +51,19 @@ interface Link {
 const externalLinks: Link[] = [
   {
     name: "LinkedIn",
-    description: "follow my career",
+    description: "/paulo-paiva-672987292",
     url: "https://www.linkedin.com/in/paulo-paiva-672987292/",
     icon: <SiLinkedin className="fill-[#0077B5] dark:fill-zinc-200" />,
   },
   {
     name: "GitHub",
-    description: "steal my code",
+    description: "/paulofpaiva",
     url: "https://github.com/paulofpaiva",
     icon: <SiGithub />,
   },
   {
     name: "Email",
-    description: "email me",
+    description: "ppaivank@gmail.com",
     url: "mailto:ppaivank@gmail.com",
     icon: <SiGmail className="fill-[#E53D39] dark:fill-zinc-200" />,
   },

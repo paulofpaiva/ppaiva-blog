@@ -3,7 +3,7 @@ import ProjectCard from "../../components/ProjectCard";
 
 export default function ProjectsPage() {
   return (
-    <div className="mx-auto max-w-4xl">
+    <div className="mx-auto max-w-3xl">
       <h1 className="mb-10 mt-4 text-center text-5xl max-sm:text-4xl">
         Projects
       </h1>

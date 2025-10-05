@@ -7,6 +7,7 @@ export interface Project {
   hasCode?: boolean;
   codeUrl?: string;
   hasPhotos?: boolean;
+  isClientWork?: boolean;
 }
 
 export const projects: Project[] = [
@@ -20,7 +21,8 @@ export const projects: Project[] = [
     technologies: [".NET 9", "AWS S3", "AWS SQS", "Docker"],
     hasCode: true,
     codeUrl: "https://github.com/paulofpaiva/api-image-processor-aws",
-    hasPhotos: true
+    hasPhotos: true,
+    isClientWork: false
   },
   {
     id: "1",
@@ -32,7 +34,8 @@ export const projects: Project[] = [
     technologies: ["Node.js", "Express", "PostgreSQL", "Drizzle ORM", "TypeScript"],
     hasCode: true,
     codeUrl: "https://github.com/paulofpaiva/better-notes-api",
-    hasPhotos: true
+    hasPhotos: true,
+    isClientWork: false
   },
   {
     id: "2",
@@ -44,11 +47,24 @@ export const projects: Project[] = [
     technologies: ["Node.js", "Express", "ApisCP"],
     hasCode: true,
     codeUrl: "https://github.com/paulofpaiva/apiscp-api",
-    hasPhotos: true
+    hasPhotos: true,
+    isClientWork: false
+  },
+  {
+    id: "8",
+    title: "REST API for Time-Series Data - Weatherford International Inc",
+    description: ".NET REST API with CQRS for time-series data, enabling efficient ingestion and querying.",
+    images: [
+      "/projects/weatherford-rest-api/weatherford_logo.jpeg"
+    ],
+    technologies: [".NET", "AWS", "SQS", "Kafka", "PostgreSQL", "QuestDB", "Docker"],
+    hasCode: false,
+    hasPhotos: true,
+    isClientWork: true
   },
   {
     id: "3",
-    title: "ABA Therapy management",
+    title: "ABA Therapy Management",
     description: "A complete management system for ABA therapy clinics, including patient and caregiver registration, therapeutic programs, stimuli, protocols, and progress analysis with detailed graphical indicators.",
     images: [
       "/projects/carewave/1.jpeg",
@@ -59,8 +75,9 @@ export const projects: Project[] = [
       "/projects/carewave/6.png"
     ],
     technologies: ["React", ".NET", "PostgreSQL"],
+    hasCode: false,
     hasPhotos: true,
-    hasCode: true
+    isClientWork: true,
   },
   {
     id: "4", 
@@ -71,8 +88,9 @@ export const projects: Project[] = [
       "/projects/ai-powered-clinical-assistant/2.png",
     ],
     technologies: ["AI", "React", ".NET", "Mistral", "PostgreSQL"],
+    hasCode: false,
     hasPhotos: true,
-    hasCode: false
+    isClientWork: true
   },
   {
     id: "5", 
@@ -85,8 +103,9 @@ export const projects: Project[] = [
       "/projects/medical-portal/4.png"
     ],
     technologies: ["ASP.NET Core", "MVC", "JavaScript", "PL/SQL"],
+    hasCode: false,
     hasPhotos: true,
-    hasCode: false
+    isClientWork: true
   },
   {
     id: "6", 
@@ -99,8 +118,9 @@ export const projects: Project[] = [
       "/projects/hospital-kiosk/3.jpeg"
     ],
     technologies: ["React", ".NET", "C#", "PL/SQL"],
+    hasCode: false,
     hasPhotos: true,
-    hasCode: false
+    isClientWork: true
   },
   {
     id: "7", 
@@ -111,8 +131,9 @@ export const projects: Project[] = [
       "/projects/portal-beneficiary/2.png",
     ],
     technologies: ["ASP.NET Core", "MVC", "JavaScript", "PL/SQL"],
+    hasCode: false,
     hasPhotos: true,
-    hasCode: false
+    isClientWork: true
   },
   
 ];
