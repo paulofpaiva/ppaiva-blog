@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, GitBranch, BookOpen } from "lucide-react";
+import { GitBranch, BookOpen} from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { ResponsiveModal } from "./ui/responsive-modal";
@@ -85,7 +85,8 @@ function ProjectCard({
         alt={`${title} project image`}
         priority={false}
         loading="lazy"
-        className="w-full h-32 sm:h-40 object-cover"
+        className="w-full h-32 sm:h-40 object-cover cursor-pointer"
+        onClick={() => hasPhotos && setIsModalOpen(true)}
       />
         {(hasCode || hasPhotos || isClientWork) && (
           <div className="flex w-full justify-between">
