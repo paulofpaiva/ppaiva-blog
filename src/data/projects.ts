@@ -59,20 +59,6 @@ export const projects: Project[] = [
     isClientWork: false
   },
   {
-    id: "2",
-    title: "ApisCP + Node + Express API",
-    description: "A RESTful API built with Node.js + Express for ApisCP server integration,   allowing you to list domains and collect account information.",
-    images: [
-      "/projects/apiscp-api/node_express_apiscp.png"
-    ],
-    technologies: ["Node.js", "Express", "ApisCP"],
-    hasCode: true,
-    codeUrl: "https://github.com/paulofpaiva/apiscp-api",
-    hasDemo: false,
-    hasPhotos: true,
-    isClientWork: false
-  },
-  {
     id: "8",
     title: "REST API for Time-Series Data - Weatherford International Inc",
     description: ".NET REST API with CQRS for time-series data, enabling efficient ingestion and querying.",
