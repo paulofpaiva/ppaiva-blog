@@ -1,6 +1,6 @@
 "use client";
 
-import { GitBranch, BookOpen} from "lucide-react";
+import { GitBranch, BookOpen, ExternalLink} from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { ResponsiveModal } from "./ui/responsive-modal";
@@ -19,6 +19,8 @@ interface Project {
   technologies: string[];
   hasCode?: boolean;
   codeUrl?: string;
+  hasDemo?: boolean;
+  demoUrl?: string;
   hasPhotos?: boolean;
   isClientWork?: boolean;
 }
@@ -31,6 +33,8 @@ function ProjectCard({
   technologies,
   hasCode,
   codeUrl,
+  hasDemo,
+  demoUrl,
   hasPhotos,
   isClientWork,
 }: Project) {
@@ -88,7 +92,7 @@ function ProjectCard({
         className="w-full h-32 sm:h-40 object-cover cursor-pointer"
         onClick={() => hasPhotos && setIsModalOpen(true)}
       />
-        {(hasCode || hasPhotos || isClientWork) && (
+        {(hasCode || hasDemo || hasPhotos || isClientWork) && (
           <div className="flex w-full justify-between">
             {isClientWork ? (
               <TooltipProvider delayDuration={10}>
@@ -120,6 +124,17 @@ function ProjectCard({
                   View code
                 </a>
               )
+            )}
+            {hasDemo && demoUrl && (
+              <a
+                href={demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex grow items-center justify-center gap-1 py-2 sm:py-3 text-xs sm:text-sm transition-transform sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-800 border-l border-zinc-400 dark:border-zinc-500"
+              >
+                <ExternalLink strokeWidth={1.4} className="size-4 sm:size-5" />
+                View Demo
+              </a>
             )}
             {hasPhotos && (
               <button

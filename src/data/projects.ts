@@ -6,6 +6,8 @@ export interface Project {
   technologies: string[];
   hasCode?: boolean;
   codeUrl?: string;
+  hasDemo?: boolean;
+  demoUrl?: string;
   hasPhotos?: boolean;
   isClientWork?: boolean;
 }
@@ -21,19 +23,38 @@ export const projects: Project[] = [
     technologies: [".NET 9", "AWS S3", "AWS SQS", "Docker"],
     hasCode: true,
     codeUrl: "https://github.com/paulofpaiva/api-image-processor-aws",
+    hasDemo: false,
+    hasPhotos: true,
+    isClientWork: false
+  },
+  {
+    id: "9",
+    title: "Strak Social",
+    description: "A modern social media platform where users can connect, share posts, interact with content, and build their online community.",
+    images: [
+      "/projects/strak-social/strak_social.png",
+      "/projects/strak-social/strak_social_2.png",
+      "/projects/strak-social/strak_social_3.png",
+      "/projects/strak-social/strak_social_4.png",
+      "/projects/strak-social/strak_social_5.png"
+    ],
+    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Firebase"],
+    hasDemo: true,
+    demoUrl: "https://monofrontend-production.up.railway.app/",
     hasPhotos: true,
     isClientWork: false
   },
   {
     id: "1",
     title: "Node + Express BetterNotes API",
-    description: "A RESTful API built with Node.js + Express and PostgreSQL (via Drizzle ORM) for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
+    description: "A RESTful API built with Node.js + Express and PostgreSQL for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
     images: [
       "/projects/better-notes/node_express_postgres_drizzle.png"
     ],
-    technologies: ["Node.js", "Express", "PostgreSQL", "Drizzle ORM", "TypeScript"],
+    technologies: ["Node.js", "Express", "PostgreSQL",  "TypeScript"],
     hasCode: true,
     codeUrl: "https://github.com/paulofpaiva/better-notes-api",
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: false
   },
@@ -47,6 +68,7 @@ export const projects: Project[] = [
     technologies: ["Node.js", "Express", "ApisCP"],
     hasCode: true,
     codeUrl: "https://github.com/paulofpaiva/apiscp-api",
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: false
   },
@@ -59,6 +81,7 @@ export const projects: Project[] = [
     ],
     technologies: [".NET", "AWS", "SQS", "Kafka", "PostgreSQL", "QuestDB", "Docker"],
     hasCode: false,
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: true
   },
@@ -76,6 +99,7 @@ export const projects: Project[] = [
     ],
     technologies: ["React", ".NET", "PostgreSQL"],
     hasCode: false,
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: true,
   },
@@ -89,6 +113,7 @@ export const projects: Project[] = [
     ],
     technologies: ["AI", "React", ".NET", "Mistral", "PostgreSQL"],
     hasCode: false,
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: true
   },
@@ -104,6 +129,7 @@ export const projects: Project[] = [
     ],
     technologies: ["ASP.NET Core", "MVC", "JavaScript", "PL/SQL"],
     hasCode: false,
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: true
   },
@@ -119,6 +145,7 @@ export const projects: Project[] = [
     ],
     technologies: ["React", ".NET", "C#", "PL/SQL"],
     hasCode: false,
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: true
   },
@@ -132,6 +159,7 @@ export const projects: Project[] = [
     ],
     technologies: ["ASP.NET Core", "MVC", "JavaScript", "PL/SQL"],
     hasCode: false,
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: true
   },
