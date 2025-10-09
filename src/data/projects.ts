@@ -33,6 +33,7 @@ export const projects: Project[] = [
     description: "A modern social media platform where users can connect, share posts, interact with content, and build their online community.",
     images: [
       "/projects/strak-social/strak_social.png",
+      "/projects/strak-social/strak_social_6.png",
       "/projects/strak-social/strak_social_2.png",
       "/projects/strak-social/strak_social_3.png",
       "/projects/strak-social/strak_social_4.png",
