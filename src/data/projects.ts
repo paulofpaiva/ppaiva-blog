@@ -41,7 +41,7 @@ export const projects: Project[] = [
     ],
     technologies: ["React", "Node.js", "Express", "PostgreSQL", "Firebase"],
     hasDemo: true,
-    demoUrl: "https://monofrontend-production.up.railway.app/",
+    demoUrl: "https://straksocial.up.railway.app/",
     hasPhotos: true,
     isClientWork: false
   },
