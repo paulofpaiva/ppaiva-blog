@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     id: "8",
     title: "REST API for Time-Series Data - Weatherford International Inc",
-    description: ".NET REST API with CQRS for time-series data, enabling efficient ingestion and querying.",
+    description: ".NET REST API with CQRS for time-series data, enabling efficient ingestion and querying. Contributed as part of the engineering team that developed this solution for Weatherford International.",
     images: [
       "/projects/weatherford-rest-api/weatherford_logo.jpeg"
     ],
