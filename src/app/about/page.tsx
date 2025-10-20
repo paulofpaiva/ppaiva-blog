@@ -11,15 +11,15 @@ export default function AboutPage() {
 
       </p> 
       <p>
-        When I&apos;m not coding, you&apos;ll probably find me playing guitar, spending time with my golden retriever Milo, or hitting the gym.
+        When I&apos;m not coding, you&apos;ll probably find me spending time with my golden retriever Milo or hitting the gym.
         Just as these activities keep me balanced outside of work, coding is where I challenge myself the most.
       </p>
       <p>
         On the frontend, I work mainly with React.js and Next.js using JavaScript, and CSS frameworks like Tailwind, Bootstrap and Bulma to build responsive user interfaces.  
       </p>
       <p>
-        On the backend, I work extensively with the .NET ecosystem, developing microservices and REST APIs, and applying architectural patterns like MVC, CQRS, and DDD.
-        I have solid experience across authentication, authorization, logging, dependency injection, and database access.
+        On the backend, I work extensively with C#, Node.js and the .NET ecosystem, developing microservices and REST APIs, and applying architectural patterns like MVC, CQRS, and DDD.
+        I have solid experience across authentication, caching and session management with Redis, authorization, logging, dependency injection, and database access.
       </p>
       <p>
         I also have solid hands-on experience with AWS, architecting and deploying solutions that integrate EC2, S3, RDS, and SQS to build scalable and production-ready systems.
@@ -29,8 +29,9 @@ export default function AboutPage() {
         My work includes designing schemas, building views, stored procedures and functions.
       </p>
       <p>
-        For DevOps and deployment, I&apos;m experienced with Git for version control, Docker for containerization, and IIS for hosting .NET applications.
+        For DevOps and deployment, I&apos;m experienced with Git, Docker and IIS for hosting .NET applications.
         I&apos;ve also deployed and maintained applications on cloud platforms such as Fly.io, Vercel, Render, and Railway, applying CI/CD pipelines and environment-specific configurations.
+        Additionally, I&apos;ve worked with Azure DevOps to build and maintain pipelines and automate releases.
       </p>
       <p>
         I&apos;m always looking for new challenges and opportunities to grow. If you&apos;re hiring or would like to collaborate, feel free to reach out.
