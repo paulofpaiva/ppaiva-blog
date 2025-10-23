@@ -52,7 +52,7 @@ const externalLinks: Link[] = [
   {
     name: "LinkedIn",
     description: "/paulo-paiva-672987292",
-    url: "https://www.linkedin.com/in/paulo-paiva-672987292/",
+    url: "https://www.linkedin.com/in/paulofpaiva/",
     icon: <SiLinkedin className="fill-[#0077B5] dark:fill-zinc-200" />,
   },
   {
