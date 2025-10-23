@@ -37,7 +37,7 @@ export default function AboutPage() {
         I&apos;m always looking for new challenges and opportunities to grow. If you&apos;re hiring or would like to collaborate, feel free to reach out.
         Send me a DM on{" "}
           <a 
-            href="https://www.linkedin.com/in/paulo-paiva-672987292/"
+            href="https://www.linkedin.com/in/paulofpaiva/"
             className="underline decoration-sky-500 underline-offset-4 dark:decoration-sky-600"
             style={{ color: 'inherit' }}
           >
