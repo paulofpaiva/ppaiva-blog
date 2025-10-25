@@ -39,23 +39,9 @@ export const projects: Project[] = [
       "/projects/strak-social/strak_social_4.png",
       "/projects/strak-social/strak_social_5.png"
     ],
-    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Firebase"],
+    technologies: ["React", "Node.js", "Express", "TypeScript", "PostgreSQL", "Firebase"],
     hasDemo: true,
     demoUrl: "https://straksocial.up.railway.app/",
-    hasPhotos: true,
-    isClientWork: false
-  },
-  {
-    id: "1",
-    title: "Node + Express BetterNotes API",
-    description: "A RESTful API built with Node.js + Express and PostgreSQL for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
-    images: [
-      "/projects/better-notes/node_express_postgres_drizzle.png"
-    ],
-    technologies: ["Node.js", "Express", "PostgreSQL",  "TypeScript"],
-    hasCode: true,
-    codeUrl: "https://github.com/paulofpaiva/better-notes-api",
-    hasDemo: false,
     hasPhotos: true,
     isClientWork: false
   },
@@ -68,7 +54,7 @@ export const projects: Project[] = [
       "/projects/everybodys-everything/2.png",
       "/projects/everybodys-everything/3.png",
     ],
-    technologies: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Drizzle ORM", "PostgreSQL"],
+    technologies: ["Next.js 16", "React", "TypeScript", "Tailwind CSS", "Drizzle ORM", "PostgreSQL"],
     hasDemo: true,
     demoUrl: "https://everybodyseverything.up.railway.app/",
     hasPhotos: true,
@@ -87,6 +73,21 @@ export const projects: Project[] = [
     hasPhotos: true,
     isClientWork: true
   },
+  {
+    id: "1",
+    title: "Node + Express BetterNotes API",
+    description: "A RESTful API built with Node.js + Express and PostgreSQL for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
+    images: [
+      "/projects/better-notes/node_express_postgres_drizzle.png"
+    ],
+    technologies: ["Node.js", "Express", "PostgreSQL",  "TypeScript"],
+    hasCode: true,
+    codeUrl: "https://github.com/paulofpaiva/better-notes-api",
+    hasDemo: false,
+    hasPhotos: true,
+    isClientWork: false
+  },
+  
   {
     id: "3",
     title: "ABA Therapy Management",
