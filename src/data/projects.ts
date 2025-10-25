@@ -60,6 +60,21 @@ export const projects: Project[] = [
     isClientWork: false
   },
   {
+    id: "10",
+    title: "Everybody's Everything",
+    description: "An anonymous posting application where anyone can share anything - texts, drawings, or a combination of both. Features include text posts, integrated drawing tool, mixed posts, and dark mode support.",
+    images: [
+      "/projects/everybodys-everything/1.png",
+      "/projects/everybodys-everything/2.png",
+      "/projects/everybodys-everything/3.png",
+    ],
+    technologies: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Drizzle ORM", "PostgreSQL"],
+    hasDemo: true,
+    demoUrl: "https://everybodyseverything.up.railway.app/",
+    hasPhotos: true,
+    isClientWork: false
+  },
+  {
     id: "8",
     title: "REST API for Time-Series Data - Weatherford International Inc",
     description: ".NET REST API with CQRS for time-series data, enabling efficient ingestion and querying. Contributed as part of the engineering team that developed this solution for Weatherford International.",
