@@ -30,7 +30,7 @@ export const projects: Project[] = [
   {
     id: "9",
     title: "Strak Social",
-    description: "A modern social media platform where users can connect, share posts, interact with content, and build their online community.",
+    description: "A social media platform where users can connect, share posts, interact with content, and build their online community.",
     images: [
       "/projects/strak-social/strak_social.png",
       "/projects/strak-social/strak_social_6.png",
@@ -46,17 +46,16 @@ export const projects: Project[] = [
     isClientWork: false
   },
   {
-    id: "10",
-    title: "Everybody's Everything",
-    description: "An anonymous posting application where anyone can share anything - texts, drawings, or a combination of both. Features include text posts, integrated drawing tool, mixed posts, and dark mode support.",
+    id: "1",
+    title: "Node + Express BetterNotes API",
+    description: "A RESTful API built with Node.js + Express and PostgreSQL for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
     images: [
-      "/projects/everybodys-everything/1.png",
-      "/projects/everybodys-everything/2.png",
-      "/projects/everybodys-everything/3.png",
+      "/projects/better-notes/node_express_postgres_drizzle.png"
     ],
-    technologies: ["Next.js 16", "React", "TypeScript", "Tailwind CSS", "Drizzle ORM", "PostgreSQL"],
-    hasDemo: true,
-    demoUrl: "https://everybodyseverything.up.railway.app/",
+    technologies: ["Node.js", "Express", "PostgreSQL",  "TypeScript"],
+    hasCode: true,
+    codeUrl: "https://github.com/paulofpaiva/better-notes-api",
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: false
   },
@@ -74,20 +73,20 @@ export const projects: Project[] = [
     isClientWork: true
   },
   {
-    id: "1",
-    title: "Node + Express BetterNotes API",
-    description: "A RESTful API built with Node.js + Express and PostgreSQL for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
+    id: "10",
+    title: "Everybody's Everything",
+    description: "An anonymous posting application where anyone can share anything - texts, drawings, or a combination of both. Features include text posts, integrated drawing tool, mixed posts, and dark mode support.",
     images: [
-      "/projects/better-notes/node_express_postgres_drizzle.png"
+      "/projects/everybodys-everything/1.png",
+      "/projects/everybodys-everything/2.png",
+      "/projects/everybodys-everything/3.png",
     ],
-    technologies: ["Node.js", "Express", "PostgreSQL",  "TypeScript"],
-    hasCode: true,
-    codeUrl: "https://github.com/paulofpaiva/better-notes-api",
-    hasDemo: false,
+    technologies: ["Next.js 16", "React", "TypeScript", "Tailwind CSS", "Drizzle ORM", "PostgreSQL"],
+    hasDemo: true,
+    demoUrl: "https://everybodyseverything.up.railway.app/",
     hasPhotos: true,
     isClientWork: false
   },
-  
   {
     id: "3",
     title: "ABA Therapy Management",
