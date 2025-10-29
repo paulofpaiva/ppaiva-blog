@@ -46,16 +46,19 @@ export const projects: Project[] = [
     isClientWork: false
   },
   {
-    id: "1",
-    title: "Node + Express BetterNotes API",
-    description: "A RESTful API built with Node.js + Express and PostgreSQL for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
+    id: "19",
+    title: "linkvault",
+    description: "linkvault is a simple personal link manager. Save URLs, add notes, organize by categories, and track status (unread, read, archived).",
     images: [
-      "/projects/better-notes/node_express_postgres_drizzle.png"
+      "/projects/linkvault/1.png",
+      "/projects/linkvault/2.png",
+      "/projects/linkvault/3.png",
+      "/projects/linkvault/4.png",
+      "/projects/linkvault/5.png",
     ],
-    technologies: ["Node.js", "Express", "PostgreSQL",  "TypeScript"],
-    hasCode: true,
-    codeUrl: "https://github.com/paulofpaiva/better-notes-api",
-    hasDemo: false,
+    technologies: ["React", "Node.js", "Express", "TypeScript", "PostgreSQL"],
+    hasDemo: true,
+    demoUrl: "https://linkvault.up.railway.app/",
     hasPhotos: true,
     isClientWork: false
   },
@@ -75,7 +78,7 @@ export const projects: Project[] = [
   {
     id: "10",
     title: "Everybody's Everything",
-    description: "An anonymous posting application where anyone can share anything - texts, drawings, or a combination of both. Features include text posts, integrated drawing tool, mixed posts, and dark mode support.",
+    description: "An anonymous posting application where anyone can share anything - texts, drawings, or a combination of both.",
     images: [
       "/projects/everybodys-everything/1.png",
       "/projects/everybodys-everything/2.png",
@@ -84,6 +87,20 @@ export const projects: Project[] = [
     technologies: ["Next.js 16", "React", "TypeScript", "Tailwind CSS", "Drizzle ORM", "PostgreSQL"],
     hasDemo: true,
     demoUrl: "https://everybodyseverything.up.railway.app/",
+    hasPhotos: true,
+    isClientWork: false
+  },
+  {
+    id: "1",
+    title: "Node + Express BetterNotes API",
+    description: "A RESTful API built with Node.js + Express and PostgreSQL for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
+    images: [
+      "/projects/better-notes/node_express_postgres_drizzle.png"
+    ],
+    technologies: ["Node.js", "Express", "PostgreSQL",  "TypeScript"],
+    hasCode: true,
+    codeUrl: "https://github.com/paulofpaiva/better-notes-api",
+    hasDemo: false,
     hasPhotos: true,
     isClientWork: false
   },
