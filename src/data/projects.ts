@@ -55,6 +55,7 @@ export const projects: Project[] = [
       "/projects/linkvault/3.png",
       "/projects/linkvault/4.png",
       "/projects/linkvault/5.png",
+      "/projects/linkvault/6.png"
     ],
     technologies: ["React", "Node.js", "Express", "TypeScript", "PostgreSQL"],
     hasDemo: true,
