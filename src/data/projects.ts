@@ -48,14 +48,16 @@ export const projects: Project[] = [
   {
     id: "19",
     title: "linkvault",
-    description: "linkvault is a simple personal link manager. Save URLs, add notes, organize by categories, and track status (unread, read, archived).",
+    description: "linkvault is a collaborative link manager that lets you save and organize links, add notes, share public collections, and explore what other users are curating.",
     images: [
+      "/projects/linkvault/0.png",
       "/projects/linkvault/1.png",
       "/projects/linkvault/2.png",
       "/projects/linkvault/3.png",
       "/projects/linkvault/4.png",
       "/projects/linkvault/5.png",
-      "/projects/linkvault/6.png"
+      "/projects/linkvault/6.png",
+      "/projects/linkvault/7.png",
     ],
     technologies: ["React", "Node.js", "Express", "TypeScript", "PostgreSQL"],
     hasDemo: true,
