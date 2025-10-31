@@ -6,7 +6,7 @@ export default function AboutPage() {
       </h1>
       <div className="flex flex-col gap-y-4">
       <p>
-        I'm Paulo Paiva, a 22-year-old software developer from São Paulo, Brazil.
+        I&apos;m Paulo Paiva, a 22-year-old software developer from São Paulo, Brazil.
         I hold a Technology degree in Systems Analysis and Development and have been developing full-stack applications since 2022, working across frontend, backend, and cloud infrastructure.
       </p> 
       <p>
@@ -16,14 +16,14 @@ export default function AboutPage() {
         I have solid experience across authentication, caching and session management, authorization, logging, dependency injection, and database access.
       </p>
       <p>
-        I’ve also worked extensively with AWS (EC2, S3, RDS, SQS) and relational databases like PostgreSQL, MySQL, Oracle PL/SQL, and QuestDB, as well as modern backend platforms such as Supabase and Firebase.
+        I&apos;ve also worked extensively with AWS (EC2, S3, RDS, SQS) and relational databases like PostgreSQL, MySQL, Oracle PL/SQL, and QuestDB, as well as modern backend platforms such as Supabase and Firebase.
         For deployment and DevOps, I use Git, Docker, and IIS, managing environments on platforms like Fly.io, Vercel, Render, and Railway with CI/CD pipelines.
       </p>
       <p>
-         When I’m not coding, I enjoy spending time with my golden retriever, Milo, or going to the gym, both help me stay balanced and focused outside of work.
+         When I&apos;m not coding, I enjoy spending time with my golden retriever, Milo, or going to the gym, both help me stay balanced and focused outside of work.
       </p>
       <p>
-        I’m a native Portuguese speaker and fluent in English, with strong communication skills in both languages.
+        I&apos;m a native Portuguese speaker and fluent in English, with strong communication skills in both languages.
         Always open to new challenges and collaborations, feel free to reach out on{" "}
           <a 
             href="https://www.linkedin.com/in/paulofpaiva/"
