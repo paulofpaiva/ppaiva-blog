@@ -29,7 +29,7 @@ export const projects: Project[] = [
   },
   {
     id: "9",
-    title: "Strak Social",
+    title: "Strak Social - Social media plataform",
     description: "A social media platform where users can connect, share posts, interact with content, and build their online community.",
     images: [
       "/projects/strak-social/strak_social.png",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   },
   {
     id: "19",
-    title: "linkvault",
+    title: "linkvault - Organize your links in a smart way",
     description: "linkvault is a collaborative link manager that lets you save and organize links, add notes, share public collections, and explore what other users are curating.",
     images: [
       "/projects/linkvault/0.png",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
   },
   {
     id: "10",
-    title: "Everybody's Everything",
+    title: "Everybody's Everything - Anonymous posting app",
     description: "An anonymous posting application where anyone can share anything - texts, drawings, or a combination of both.",
     images: [
       "/projects/everybodys-everything/1.png",
@@ -90,20 +90,6 @@ export const projects: Project[] = [
     technologies: ["Next.js 16", "React", "TypeScript", "Tailwind CSS", "Drizzle ORM", "PostgreSQL"],
     hasDemo: true,
     demoUrl: "https://everybodyseverything.up.railway.app/",
-    hasPhotos: true,
-    isClientWork: false
-  },
-  {
-    id: "1",
-    title: "Node + Express BetterNotes API",
-    description: "A RESTful API built with Node.js + Express and PostgreSQL for managing rich notes with full CRUD operations, authentication, and advanced search capabilities.",
-    images: [
-      "/projects/better-notes/node_express_postgres_drizzle.png"
-    ],
-    technologies: ["Node.js", "Express", "PostgreSQL",  "TypeScript"],
-    hasCode: true,
-    codeUrl: "https://github.com/paulofpaiva/better-notes-api",
-    hasDemo: false,
     hasPhotos: true,
     isClientWork: false
   },

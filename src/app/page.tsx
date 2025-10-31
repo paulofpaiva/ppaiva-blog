@@ -95,7 +95,7 @@ export default function HomePage() {
   return (
     <div className="mx-auto max-w-prose flex flex-col gap-6">
       <p className="text-sm text-zinc-700 dark:text-zinc-400">
-      Building full-stack apps that solve problems, and learning to make them work better, faster, and at scale.
+      Building full-stack solutions that work better, faster, and at scale.
       </p>
       <p className="text-sm flex items-center gap-2 text-zinc-700 dark:text-zinc-400">
         <Image 
